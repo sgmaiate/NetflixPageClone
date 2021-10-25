@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png">
+    <title>Netflix</title>
+    <style>
+        * {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .titleBackground {
+        background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+        url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png");
+        background-size: 100%;
+    }
+    .loginBox {
+        width: 500px;
+        height: 600px;
+        background-color:rgba(0, 0, 0, 0.6);
+        
+    }
+    .centralize {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        color: white;
+        font-size: 35px;
+        margin-left: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        color: black;
+        
+    }
+    .loginCredentials {
+        width: 390px;
+        height: 50px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        background-color: gray;
+    }
+    .loginButton {
+        width: 398px;
+        height: 50px;
+        background-color: red;
+        font-size: 20px;
+        margin-top: 40px;
+        opacity: 100%;
+        border-radius: 8px;
+    }
+    .saveCredentials {
+        height: 15px;
+        width: 15px;
+    }
+    .help {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    .left {
+        margin-top: 60px;
+        margin-left: -185px;
+    }
+    .up {
+        margin-top: -20px;
+    }
+    
+    </style>
+</head>
+<body class="titleBackground">
+    <header>
+        <a href="./Netflix.html"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" width="200" height="100" alt=""></a>
+    </header>
+    <section class="centralize">
+    <div class="loginBox">
+    <header>
+        <h1>Entrar</h1>
+    </header>
+    <div class="centralize">
+        <form class="form">
+            <input class="loginCredentials" placeholder="Email ou numero de telefone" name="Email" type="text">
+            <input class="loginCredentials" placeholder="Senha" name="Password" type="password">
+            <button class="loginButton">Entrar</button>
+        </form>
+    </div>
+    <section class="help">
+    <div>
+        <input type="checkbox" name="saveCredentials" class="saveCredentials">
+        <label for="saveCredentials" style="color: #b3b3b3;">Lembre-se de mim</label>
+    </div>
+    <div>
+        <a href="" style="color: gray;">Precisa de ajuda?</a>
+    </div>
+    </section>
+    <section class="form left">
+    <div class="centralize">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/768px-Facebook_icon_2013.svg.png" width="20" height="20" alt="">
+        <p style="margin-top: -1px; color: gray;">Conectar com facebook</p>
+    </div>
+    <div class="centralize up">
+        <p style="margin-right: -15px; color: gray;" >Novo por aqui? <b><a style="text-decoration: none;" href="./Netflix.html">assine agora.</a></b></p>
+    </div>
+    <div class="centralize">
+        <p style="font-size: 15px; margin-left: 180px; color: gray;">Esta página é protegida pelo Google reCAPTCHA<br> para garantir que você não é um robô. <a style="color: #0071eb;">Saiba mais.</a></p>
+    </div>
+    </section>
+    </div>
+</section>
+</body>
+</html>

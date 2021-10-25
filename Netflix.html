@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Brasil - assistir a séries online, assistir a filmes online</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/netflix_logo_icon_170919.png">
+    <style>
+        * {
+            margin-left: 0px;
+            margin-right: 0px;
+            color: white;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .titleBackground {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.7),
+                    rgba(0, 0, 0, 0.7)),
+                url("https://miro.medium.com/max/1400/1*5lyavS59mazOFnb55Z6znQ.png");
+            background-size: 100%;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        #box {
+            display: flex;
+            justify-content: space-between;
+            font-size: 23px;
+            text-align: center;
+
+        }
+
+        .redBackground {
+            background-color: #e50914;
+
+        }
+
+        .boxOneLenght {
+            margin-top: 25px;
+            margin-left: 20px;
+            width: 100px;
+            height: 40px;
+        }
+
+        .centerText {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-family: sans-serif;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        #form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .boxTwo {
+            width: 180px;
+            height: 61px;
+        }
+
+        .userEmail {
+            width: 455px;
+            height: 55px;
+        }
+
+        .button {
+            border: none;
+            background-color: #ff000d;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: rgb(216, 0, 0);
+        }
+
+        .greyLine {
+            background: #222;
+            width: 100%;
+            height: 45px;
+        }
+
+        .blackBack {
+            display: flex;
+            justify-content: space-around;
+            background: black;
+            width: 100%;
+            height: 400px;
+            margin-top: -35px;
+            padding-bottom: 50px;
+            border-top: 6px solid #222;
+        }
+
+        .down {
+            margin-top: 55px;
+        }
+
+        .faqButton {
+            width: 650px;
+            height: 80px;
+            background: #303030;
+            font-size: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .faq {
+            text-align: center;
+            background: black;
+            width: 100%;
+            height: 860px;
+            margin-top: -70px;
+        }
+
+        .centerItems {
+            display: flex;
+            justify-content: center;
+        }
+
+        .relative {
+            position: relative;
+            z-index: 2;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 20px;
+            z-index: 1;
+            width: 79%;
+            right: 40px;
+        }
+
+        .page-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 5px solid #222;
+            height: 400px;
+            background-color: black;
+        }
+        .footer-content {
+            width: 60%;
+    
+
+        }
+        .footer-content h2,
+        .footer-content li,
+        .footer-content p,
+        .footer-content a {
+            color: #757575;;
+        }  
+        .footer-content h2 {
+            font-size: 20px;
+            padding: 0px 20px;
+        }
+        .footer-content ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 20px;
+        }
+        .footer-content ul a {
+            text-decoration: none;
+        }
+        .footer-content li {
+            font-size: 17px;
+            padding: 6px;
+        }
+        .footer-content a:hover {
+            text-decoration: underline;
+        }
+        .footer-content p {
+            padding:20px;
+        }
+    </style>
+</head>
+
+<body class="titleBackground">
+    <div>
+        <header id="box">
+            <div>
+                <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" width="200" height="100"
+                    alt="">
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <select style="color: black;" class="boxOneLenght">
+                        <option style="color: black;" value="PT-BR">Português</option>
+                        <option style="color: black;" value="EN">English</option>
+                    </select>
+                </div>
+                <div>
+                    <a href="./NetflixLogin.html"><button style="margin-right: 15px; border-radius: 6px;"
+                            class="button boxOneLenght">Entrar</button></a>
+                </div>
+            </div>
+        </header>
+        <header class="centerText">
+            <div>
+                <b>
+                    <h1>Filmes, séries e muito mais.</h1>
+                </b><br>
+                <b>
+                    <h1 style="margin-top:-50px;">Sem limites.</h1>
+                </b>
+            </div>
+            <div>
+                <h2>Assista onde quiser. Cancele quando quiser.</h2>
+                <b>
+                    <h3>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h3>
+                </b>
+            </div>
+        </header>
+        <section id="form">
+            <form style="display: flex;" action="">
+                <input style="color: black;" placeholder="Email" type="email" class="userEmail" name="userEmail"
+                    required>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=yoC9P8Bsa_k&t=1039s"><button class="button boxTwo">Vamos lá
+                            ></button></a>
+                </div>
+            </form>
+        </section>
+    </div>
+    <div style="margin-top: 320px;" class=>
+    </div>
+    <header class="blackBack">
+        <div class="centerText down">
+            <h1>Aproveite na TV.</h1>
+            <h2>Assista em Smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, aparelhos de Blu-ray e<br> outros
+                dispositivos.</h2>
+        </div>
+        <div class="relative">
+            <img class="relative" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                width="500" height="320" alt="">
+            <div><video class="absolute" autoplay muted loop
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
+            </div>
+        </div>
+    </header>
+
+    <div>
+    </div>
+    <header class="blackBack">
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
+        <div class="centerText down">
+            <h1>Baixe séries para assistir offline.</h1>
+            <h2>Salve seus títulos favoritos e sempre tenha<br> algo para assistir.</h2>
+        </div>
+    </header>
+    <div>
+    </div>
+    <header class="blackBack centerText">
+        <div class="centerText down">
+            <h1>Assista quando quiser.</h1>
+            <h2>Assista no celular, tablet, Smart TV ou<br> notebook sem pagar a mais por isso.</h2>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="">
+    </header>
+    <div>
+    </div>
+    <header class="blackBack">
+        <img src="https://occ-0-4405-420.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABUb4fcnETtielPJer_ORwZ2iUanycANl37cr81zDaXC9Fmg9c42ofxt0yxetNltG2xUMgf2Aqimz_q1Nsv-38Ng_EjIc.png?r=1b8"
+            alt="">
+        <div class="centerText down">
+            <h1>Crie perfis para crianças.</h1>
+            <h2>Deixe as crianças se aventurarem com seus<br> personagens favoritos em um espaço feito só<br> para elas,
+                sem pagar a mais por isso.</h2>
+        </div>
+    </header>
+    <div class="greyLine"></div>
+    <header class="faq">
+        <h1 style="padding-top: 25px;">Perguntas Frequentes</h1>
+        <div>
+            <ul>
+                <li><button class="faqButton">O Que é a Netflix?</button></li>
+                <li><button class="faqButton">Quanto custa a Netflix?</button></li>
+                <li><button class="faqButton">Onde posso assistir?</button></li>
+                <li><button class="faqButton">Como faço pra cancelar?</button></li>
+                <li><button class="faqButton">O Que eu posso assistir na Netflix?</button></li>
+                <li><button class="faqButton">a Netflix é adequada para crianças?</button></li>
+            </ul>
+        </div>
+        <header>
+            <h3 style="font-size: 18px;">Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.
+            </h3>
+            <div class="centerItems">
+                <form style="display: flex;" action="">
+                    <input style="color: black;" placeholder="Email" type="email" class="userEmail" name="userEmail"
+                        required>
+                    <div>
+                        <a href="https://www.youtube.com/watch?v=yoC9P8Bsa_k&t=1039s"><button
+                                class="button boxTwo">Vamos lá ></button></a>
+                    </div>
+                </form>
+            </div>
+        </header>
+    </header>
+    <footer class="page-footer">
+        <div class="footer-content">
+            <h2>Duvidas? Ligue <a>0800-761-4631</a></h2>
+            <ul>
+                <li><a href="">Perguntas Frequentes</a></li>
+                <li><a href="">Centro de Ajuda</a></li>
+                <li><a href="">Conta</a></li>
+                <li><a href="">Imprensa</a></li>
+                <li><a href="">Relações com Investidores</a></li>
+                <li><a href="">Carreiras</a></li>
+                <li><a href="">Resgatar cartão pré-pago</a></li>
+                <li><a href="">Comprar cartão pré-pago</a></li>
+                <li><a href="">Formas de assistir</a></li>
+                <li><a href="">Termos de uso</a></li>
+                <li><a href="">Privacidade</a></li>
+                <li><a href="">Preferências de cookies</a></li>
+                <li><a href="">Informações corporativas</a></li>
+                <li><a href="">Entre em contato</a></li>
+                <li><a href="">Teste de velocidade</a></li>
+                <li><a href="">Avisos legais</a></li>
+                <li><a href="">Só na Netflix</a></li>
+            </ul>
+            <div>
+                <select style="color: black;" class="boxOneLenght">
+                    <option style="color: black;" value="PT-BR">Português</option>
+                    <option style="color: black;" value="EN">English</option>
+                </select>
+            </div>
+            <p>Netflix Brasil</p>
+        </div>
+    </footer>
+</body>
+
+</html>
